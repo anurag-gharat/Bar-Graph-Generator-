@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Learn D3.js</title>
+    </head>
+    <body>
+
+    <div class="row">
+        <div class="block">
+            <div class="heading">
+                <h2>Bar Graph Generator</h2>
+                <p>Add your values and click on Genterate</p>
+            </div>
+            <div class="content">
+                <input type="text" name="barChartname" placeholder="Name Your Barchart">
+            </div>
+            <div class="content">
+                <input type="text" placeholder="Add values in form of percentages like 60">
+                <button onclick="addElement()">Add</button>
+            </div>
+            <div class="content">
+                <button>Generate</button>
+            </div>
+                
+        </div>
+        <div class="block">
+            <h1>Bar Chart using D3.js</h1>
+            <svg class="bar-chart"></svg>
+        </div>
+   
+        
+                
+       
+    </div>
+    </body>
+     <script src="https://d3js.org/d3.v4.min.js"></script>
+     <script src="index.js"></script>
+</html>
