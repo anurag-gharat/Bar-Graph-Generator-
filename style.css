@@ -4,6 +4,7 @@ body{
     background-color: #fefefe;
     box-sizing: border-box;
 }
+
 .row{
     display: flex;
     height: 100vh;
@@ -47,13 +48,54 @@ body{
     width: 70%;
     height: 65vh;
     margin-top: 5vh;
-    background-color: blueviolet;
+    background-color: #f3f3f3;
     border-radius: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.block>.main-content>.content>.barchartname{
-    height: 45px;
+.block>.main-content>.content{
+    width: 80%;
+}
+.block>.main-content>.content>div>input{
+    height: 30px;
+    width: 80%;
+    border:none;
+    border-bottom: 2px solid #555;
+    border-radius: none;
+    background-color: transparent;
+    outline: none;
+}
+.block>.main-content>.content>div>.label1{
+    position: absolute;
+    top:36%;
+    left: 11%;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.block>.main-content>.content>div>input:focus{
+    border: none;
+    border-bottom: 2px solid #222;
+}
+.block>.main-content>.content>div>input:focus + .label1,
+.block>.main-content>.content>div>input:valid + .label1{
+    top: 31%;
+    color: red;
+    transition: .5s ease-in-out;
+}
+.block>.main-content>.content>div>.label2{
+    position: absolute;
+    top:57%;
+    left: 11%;
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.block>.main-content>.content>div>input:focus + .label2,
+.block>.main-content>.content>div>input:valid + .label2{
+    top: 51%;
+    color: red;
+    transition: .5s ease-in-out;
 }
