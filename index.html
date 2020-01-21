@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Learn D3.js</title>
+        <title>D3.js</title>
     </head>
     <body>
 
@@ -25,23 +25,20 @@
                 <div>
                     <input type="text" name="element" id="element" required>
                     <label class="label2">Add values</label>
+                    <button onclick="addElement()" class="add-btn">Add</button>
                 </div>
-                <button onclick="addElement()">Add</button>
             </div>
-            <div class="content">
-                <button onclick="showGraph()">Generate</button>
+            <div class="content content-btn">
+                <button onclick="showGraph()" class="show-btn">Generate</button>
             </div>
             </div>
                 
         </div>
         <div class="block">
-            <h1>Bar Chart using D3.js</h1>
-            <svg class="bar-chart"></svg>
-        </div>
-   
-        
-                
-       
+            <div class="bar-heading"><h2>Bar Chart using D3.js</h2></div>
+            <div class="svg-holder"><svg class="bar-chart class="svg-holder""> class="svg-holder"</svg></div>
+            
+        </div>    
     </div>
     </body>
      <script src="https://d3js.org/d3.v4.min.js"></script>

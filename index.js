@@ -12,7 +12,7 @@ var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
 // var dataset=[1,2,3,4,5,6,7];
 
     function showGraph(){
-            var svgWidth = 600, svgHeight = 400, barPadding = 5;
+            var svgWidth = 500, svgHeight = 400, barPadding = 5;
             var barWidth = (svgWidth / dataset.length);
             
             
@@ -34,6 +34,7 @@ var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
                             .attr("height", function(d) { 
                                 return yScale(d); 
                             })
+                            .attr("fill","#16a0e2")
                             .attr("width", barWidth - barPadding)
                             .attr("transform", function (d, i) {
                                 var translate = [barWidth * i, 0]; 
@@ -52,7 +53,7 @@ var dataset = [80, 100, 56, 120, 180, 30, 40, 120, 160];
                                 .attr("y",function(d,i){
                                     return svgHeight;
                                 })
-                                .attr("fill","#fff");
+                                .attr("fill","#000");
                             }
  
                                                                                                                                                                                                                  
